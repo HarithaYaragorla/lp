@@ -42,8 +42,8 @@ html, body {
   color: #dee2e6;
   text-decoration: none;
   text-align: center;
-  margin-bottom: 100px;
-  line-height: 1.2;
+  margin-bottom: 1rem;
+  line-height: 1.5;
   font-weight: 500;
 }
 
@@ -106,7 +106,8 @@ html, body {
 
 /* Line styles */
 .hr-line {
-  border: 1px solid #b5f58c;
+  /* border: 0.5px solid #b5f58c; */
+  border-color: #b5f58c;
   opacity: 0.2;
   margin: 1rem 0;
 }
@@ -114,8 +115,9 @@ html, body {
 .hr-line-1 {
   border: none;
   width: 1px;
-  background: linear-gradient(to bottom, #0059b2, #b5f58c);
-  opacity: 0.6;
+  background: linear-gradient(to bottom, #b5f58c, #0059b2);
+  opacity: 0.4;
+  height: 80px;
 }
 
 .material-symbols-outlined {
@@ -445,14 +447,15 @@ html, body {
   font-size: 24px;
   color: #ffffff;
   margin-bottom: 1rem;
+  font-weight: 700;
 }
 
 .card-body p {
   font-family: 'Source Sans 3';
   font-size: 16px;
   color: #c4c4c4;
-  line-height: 1.5;
-  margin-bottom: 1.5rem;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .service-section-hr {
@@ -474,10 +477,12 @@ html, body {
 .solutions-title {
   font-family: 'Inter';
   font-size: 40px;
+  line-height: 1.2;
   color: #ffffff;
   text-decoration: none;
   text-align: center;
-  padding-bottom: 3rem;
+  padding: 1rem 0 1.5rem 0;
+  font-weight: 300;
 }
 
 .solution-item {
@@ -488,9 +493,9 @@ html, body {
   transition: background-color 0.3s ease;
 }
 
-.solution-item:hover {
+/* .solution-item:hover {
   background-color: rgba(255, 255, 255, 0.05);
-}
+} */
 
 .solution-text {
   display: flex;
@@ -502,7 +507,7 @@ html, body {
 
 .solution-item img {
   width: 60px;
-  height: 50px;
+  height: 60px;
   object-fit: contain;
 }
 
@@ -512,25 +517,31 @@ html, body {
 
 .solution-item h4 {
   font-family: 'Inter';
-  font-size: 26px;
+  font-size: 24px;
   color: #b5f58c;
   display: flex;
   justify-content: flex-start;
+  flex-grow: 1;
   text-align: left;
   padding-right: 3rem;
   width: 25%;
   margin: 0;
+  text-decoration: none solid rgb(181, 245, 140);
+  line-height: 36px;
 }
 
 .solution-item p {
   display: flex;
   justify-content: flex-start;
   text-align: left;
-  font-size: 16px;
-  color: #c4c4c4;
   line-height: 1.5;
   width: 50%;
   margin: 0;
+  font-family: 'Source Sans 3';
+  font-size: 16px;
+  color: #d1d1d1;
+  text-decoration: none solid rgb(209, 209, 209);
+  font-weight: 600;
 }
 
 .solution-item a {
@@ -547,8 +558,8 @@ html, body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   border: 1px solid #b5f58c;
   border-radius: 4px;
   background-color: transparent;
@@ -575,12 +586,16 @@ html, body {
 .who-we-are {
   display: flex;
   justify-content: center;
-  margin-bottom: 5rem;
+  margin: 3rem 0;
   flex-wrap: wrap;
 }
 
+.desc{
+  padding-bottom: 100px !important;
+}
+
 .who-we-are-item {
-  padding: 3rem;
+  padding: 0 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -591,9 +606,28 @@ html, body {
 }
 
 .who-we-are-item img {
-  width: 50px;
-  height: 50px;
   margin-bottom: 1rem;
+}
+.wer-img1{
+  width: 49px;
+  height: 43px;
+}
+.wer-img2{
+  width: 60px;
+  height: 38px;
+}
+.wer-img3{
+  width: 43px;
+  height: 46px;
+  background-size: cover;
+}
+.wer-img4{
+  width: 39px;
+  height: 40px;
+}
+.wer-img5{
+  width: 45px;
+  height: 46px;
 }
 
 .who-we-are-item p {
@@ -604,7 +638,7 @@ html, body {
 
 .know-about-us {
   border: 2px solid transparent;
-  padding: 10px 15px;
+  padding: 0.7rem 2rem;
   border-radius: 4px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), 
                     linear-gradient(90deg, #1e90ff, #00ff99);
@@ -645,7 +679,8 @@ html, body {
 }
 
 .carousel-track img {
-  height: 80px;
+  height: 100px;
+  width: 200px;
   margin: 0 20px;
   border: 1px solid #444;
   padding: 10px;
@@ -653,6 +688,8 @@ html, body {
   background-color: #000000;
   vertical-align: middle;
   transition: transform 0.3s ease;
+  object-fit: scale-down;
+  opacity: 0.8;
 }
 
 .carousel-track img:hover {
@@ -761,7 +798,7 @@ html, body {
 /* Industries Section */
 .industries-section {
   box-sizing: border-box;
-  padding: 5rem 0;
+  padding: 3rem 0 2rem 0;
 }
 
 .industries-carousel {
