@@ -22,7 +22,7 @@
             <img src="./images/logo-image.svg" alt="Logo" class="logo-image" />
             <img src="./images/proviniti.svg" alt="Proviniti" class="logo-text" />
             <!-- <span class="logo-divider"></span> -->
-            <img src="./images/Path.svg" alt="Divider" />
+            <img src="./images/Path.svg" alt="Divider" class="logo-divider"/>
             <img src="./images/Solutions.svg" alt="ServiceNow" class="logo-servicenow" />
           </a>
         </div>
@@ -105,9 +105,14 @@
             <ul>
               <li><a href="#">Advisory and Consulting</a></li>
               <li><a href="#">Implementation Services</a></li>
+              <ul class="inner-ul">
+                <li><a href="#">Digital Transformation</a></li>
+                <li><a href="#">Intelligent Automation</a></li>
+                <li><a href="#">Customer Experience</a></li>
+                <li><a href="#">Technology Innovation</a></li>
+              </ul>
               <li><a href="#">Migration Services</a></li>
-              <li><a href="#">Digital Transformation</a></li>
-              <li><a href="#">Intelligent Automation</a></li>
+              
             </ul>
           </div>
           <div class="col-md-3 menu-column">
@@ -266,8 +271,8 @@
   </div>
 
   <!-- Industries -->
-  <div class="container">
-    <div class="industries-section">
+  <div class="industries-section">
+    <div class="container">
       <h4 class="title">Industries</h4>
       <p class="description">Obtain industry-specific ServiceNow solutions that drive digital transformation with efficient <br> workflows - all with Proviniti's expertise.</p>
       <div class="industries-carousel">
@@ -277,8 +282,7 @@
           <h5>Financial Services</h5>
           <p>Proviniti's ServiceNow platform offers tailored, 
             cost-effective financial solutions, enhancing 
-            visibility, compliance, customer retention, 
-            wealth management, and insurance satisfaction. </p>
+            visibility, compliance, wealth management, and insurance satisfaction. </p>
             <div class="read-more"><a href="#">Read more <span class="material-symbols-outlined">chevron_right</span></a></div>
           <!-- </div> -->
         </div>
@@ -286,8 +290,8 @@
         <div class="industries-card industries-card-1" style="background-image: url('./images/telecom-industry.jpeg');">
           <h5>Telecom Industry</h5>
           <p>Enhance customer experiences, reduce costs, and boost efficiency 
-            through advanced automation with the customized
-            telecom solutions from Proviniti's ServiceNow platform.</p>
+            through automation with customized
+            telecom solutions from Proviniti's ServiceNow.</p>
             <div class="read-more"><a href="#">Read more <span class="material-symbols-outlined">chevron_right</span></a></div>
         </div>
     
@@ -401,7 +405,7 @@
           <p class="test-description">When it comes to complex technology challenges and mission-critical tasks, industry-leading companies trust Proviniti.</p>
         </div>
         <div  class="testimonial-item">
-          <div>
+          <div class="quote-left-container">
             <img src="./images/quote-left.svg" alt="Quote" />
             <img src="./images/quote-left.svg" alt="Quote" />
           </div>
@@ -410,8 +414,8 @@
             eleifend. Nam pretium in sem id viverra. Nulla quis ornare justo. 
             Sed sit amet interdum ex. Nam et dolor tortor.  Praesent pretium
             lacus sit amet ante hendrerit eleifend.</p>
-            <p class="test-title">Robert Williams</p>
-            <p class="test-description-1">Company name</p>
+            <p class="test-title employee-name">Robert Williams</p>
+            <p class="test-description-2">Company name</p>
             <div class="img-section">
               <img src="./images/Robert.png" alt="Robert-Williams" class="img1" />
               <img src="./images/Aria.png" alt="Aria" />
@@ -430,24 +434,22 @@
     <div class="container">
       <div class="card-container">
         <div class="industries-card" style="background-image: url('./images/r1.png');">
-          <p>Press Release</p>
-          <h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae
-            ullamcorper diam. Praesent pretium lacus sit amet ante hendrerit
-            eleifend.</h6>
+          <p class="resource-title">Press Release</p>
+          <h6 class="resource-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae
+            ullamcorper diam. 
+           </h6>
             <div class="read-more"><a href="#">Read more <span class="material-symbols-outlined">chevron_right</span></a></div>
         </div>
         <div class="industries-card" style="background-image: url('./images/r2.png');">
-          <p>Blog</p>
-          <h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae
-            ullamcorper diam. Praesent pretium lacus sit amet ante hendrerit
-            eleifend.</h6>
+          <p class="resource-title">Blog</p>
+          <h6 class="resource-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae
+            ullamcorper diam. </h6>
             <div class="read-more"><a href="#">Read more <span class="material-symbols-outlined">chevron_right</span></a></div>
         </div>
         <div class="industries-card" style="background-image: url('./images/r3.png');">
-          <p>Press Release</p>
-          <h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae
-            ullamcorper diam. Praesent pretium lacus sit amet ante hendrerit
-            eleifend.</h6>
+          <p class="resource-title">Press Release</p>
+          <h6 class="resource-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae
+            ullamcorper diam.</h6>
             <div class="read-more"><a href="#">Read more <span class="material-symbols-outlined">chevron_right</span></a></div>
       </div>
     </div>
@@ -471,7 +473,7 @@
     <div class="footer-container">
     <div class="footer-column">
       <img src="./images/logo-image.svg" alt="Logo" class="logo"/>
-      <p>Proviniti is a deep tech firm that helps <br>businesses leverage innovation to<br>
+      <p class="footer-content">Proviniti is a deep tech firm that helps <br>businesses leverage innovation to<br>
          build smarter technologies, drive <br>results, and fuel progress.</p>
     </div>
 
@@ -503,7 +505,7 @@
       </div>
       <div style="padding-left: 10px;">
         <div>
-          <h6  class="region-title">EUROPE</h6>
+          <h6  class="region-title">Europe</h6>
           <h6>PALERMO</h6>
           <p>Via Enzo Ed Elvira Sellerio, 50- <br> 90141 Palemo, Italy</p>
         </div>
@@ -514,7 +516,7 @@
           <p>1540 Rockwell Avenue Bristol, <br>London</p>
         </div>
         <div>
-          <h6  class="region-title">ASIA</h6>
+          <h6  class="region-title">Asia</h6>
           <h6>BANGLORE, INDIA<br> MANILLA, PHILLIPPINES</h6>
         </div>
       </div>
@@ -525,8 +527,8 @@
     <!-- Contact -->
     <div class="footer-column contact">
       <h6 class="section-title">Contact</h6>
-      <p> <span> <img src="./images/Mail.svg" alt="Mail" /></span> info@proviniti.com</p>
-      <p> <span><img src="./images/Call.svg" alt="Call" /></span> +1 800-935-6846</p>
+      <p> <span> <img src="./images/Mail.svg" alt="Mail" style="padding-right: 5px;" /></span> info@proviniti.com</p>
+      <p> <span><img src="./images/Call.svg" alt="Call"  style="padding-right: 5px;"  /></span> +1 800-935-6846</p>
 
       <h6 class="section-title">Socials</h6>
       <div class="social-icons">
@@ -549,36 +551,9 @@
   </div>
 
 
-  <!-- <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const carousel = document.querySelector('.industries-carousel');
-  
-      if (carousel) {
-        carousel.addEventListener('wheel', function (evt) {
-          // Only horizontal scroll if vertical scroll exists
-          if (evt.deltaY !== 0) {
-            evt.preventDefault();
-            carousel.scrollLeft += evt.deltaY;
-          }
-        }, { passive: false });
-      }
-    });
-  </script> -->
-  <!-- <script>
-    document.addEventListener("DOMContentLoaded", function () {
-    const carousel = document.querySelector(".industries-carousel");
-
-    if (carousel) {
-      carousel.addEventListener("wheel", (event) => {
-        event.preventDefault();
-        carousel.scrollLeft += event.deltaY;
-      });
-    }
-    });
-  </script> -->
   <script>
     // Navbar scroll effect
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
       const navbar = document.querySelector('.navbar');
       if (window.scrollY > 50) {
         navbar.classList.add('scrolled');
@@ -586,132 +561,131 @@
         navbar.classList.remove('scrolled');
       }
     });
-    
-    // Mega menu functionality
-    document.addEventListener('DOMContentLoaded', function() {
+  
+    // DOM Ready
+    document.addEventListener('DOMContentLoaded', function () {
+      // === Mega Menu Setup ===
       const whoTrigger = document.querySelector('.who-menu-trigger');
       const whatTrigger = document.querySelector('.what-menu-trigger');
       const resourcesTrigger = document.querySelector('.resources-menu-trigger');
-      
+  
       const whoMenu = document.getElementById('whoWeAreMenu');
       const whatMenu = document.getElementById('whatWeDoMenu');
       const resourcesMenu = document.getElementById('resourcesMenu');
-      
-      const isMobile = window.innerWidth < 768;
-      
-      // Helper to close all menus
+  
+      let isMobile = window.innerWidth < 768;
+  
       function closeAllMenus() {
-        whoMenu.classList.remove('show');
-        whatMenu.classList.remove('show');
-        resourcesMenu.classList.remove('show');
-        
-        whoTrigger.classList.remove('active');
-        whatTrigger.classList.remove('active');
-        resourcesTrigger.classList.remove('active');
+        [whoMenu, whatMenu, resourcesMenu].forEach(menu => menu.classList.remove('show'));
+        [whoTrigger, whatTrigger, resourcesTrigger].forEach(trigger => trigger.classList.remove('active'));
       }
-      
-      // Helper to handle menu hover/click
+  
       function setupMenuInteraction(trigger, menu) {
         if (isMobile) {
-          // Mobile click behavior
-          trigger.addEventListener('click', function(e) {
+          trigger.addEventListener('click', function (e) {
             e.preventDefault();
-            
-            if (menu.classList.contains('show')) {
-              menu.classList.remove('show');
-              trigger.classList.remove('active');
-            } else {
-              closeAllMenus();
+            const isShown = menu.classList.contains('show');
+            closeAllMenus();
+            if (!isShown) {
               menu.classList.add('show');
               trigger.classList.add('active');
             }
           });
         } else {
-          // Desktop hover behavior
-          trigger.addEventListener('mouseenter', function() {
+          trigger.addEventListener('mouseenter', function () {
             closeAllMenus();
             menu.classList.add('show');
             trigger.classList.add('active');
           });
-          
-          menu.addEventListener('mouseenter', function() {
+  
+          menu.addEventListener('mouseenter', function () {
             menu.classList.add('show');
             trigger.classList.add('active');
           });
-          
-          trigger.addEventListener('mouseleave', function(e) {
-            // Check if we're not moving to the menu
+  
+          trigger.addEventListener('mouseleave', function (e) {
             if (!isMouseInPath(e, menu)) {
               menu.classList.remove('show');
               trigger.classList.remove('active');
             }
           });
-          
-          menu.addEventListener('mouseleave', function() {
+  
+          menu.addEventListener('mouseleave', function () {
             menu.classList.remove('show');
             trigger.classList.remove('active');
           });
         }
       }
-      
-      // Helper to check if mouse is moving toward menu
+  
       function isMouseInPath(e, menu) {
         const menuRect = menu.getBoundingClientRect();
-        // Check if mouse is moving toward the menu
         return e.clientY >= menuRect.top - 20;
       }
-      
-      // Set up interactions for all menus
+  
       setupMenuInteraction(whoTrigger, whoMenu);
       setupMenuInteraction(whatTrigger, whatMenu);
       setupMenuInteraction(resourcesTrigger, resourcesMenu);
-      
-      // Close menu when clicking elsewhere
-      document.addEventListener('click', function(e) {
+  
+      document.addEventListener('click', function (e) {
         if (!e.target.closest('.nav-link') && !e.target.closest('.mega-menu-panel')) {
           closeAllMenus();
         }
       });
-      
-      // Handle window resize
-      window.addEventListener('resize', function() {
+  
+      // Re-initialize on resize to adapt behavior
+      window.addEventListener('resize', function () {
         const newIsMobile = window.innerWidth < 768;
         if (newIsMobile !== isMobile) {
-          location.reload(); // Reset behavior based on screen size
+          location.reload(); // Reload to rebind correct event type
         }
       });
-    });
-    
-    // Industry carousel functionality
-    const dots = document.querySelectorAll(".dot");
-    const container = document.getElementById("cardTrack");
   
-    dots.forEach((dot, index) => {
-      dot.addEventListener("click", () => {
-        const cardWidth = container.querySelector(".industries-card").offsetWidth + 16; 
-        container.scrollTo({
-          left: index * cardWidth * 2, 
-          behavior: "smooth"
+      // === Industry Carousel Scroll by Dot ===
+      const dots = document.querySelectorAll(".dot");
+      const container = document.getElementById("cardTrack");
+  
+      if (container) {
+        dots.forEach((dot, index) => {
+          dot.addEventListener("click", () => {
+            const cardWidth = container.querySelector(".industries-card").offsetWidth + 16;
+            container.scrollTo({
+              left: index * cardWidth * 2,
+              behavior: "smooth"
+            });
+            updateDots(index);
+          });
         });
-        updateDots(index);
-      });
-    });
   
-    function updateDots(activeIndex) {
-      dots.forEach((dot, i) => {
-        dot.classList.toggle("active", i === activeIndex);
-      });
-    }
+        container.addEventListener("scroll", () => {
+          const scrollLeft = container.scrollLeft;
+          const cardWidth = container.querySelector(".industries-card").offsetWidth + 16;
+          const activeIndex = Math.round(scrollLeft / (cardWidth * 2));
+          updateDots(activeIndex);
+        });
   
-    container.addEventListener("scroll", () => {
-      const scrollLeft = container.scrollLeft;
-      const cardWidth = container.querySelector(".industries-card").offsetWidth + 16;
-      const activeIndex = Math.round(scrollLeft / (cardWidth * 2));
-      updateDots(activeIndex);
+        // === Horizontal scroll using mouse wheel or touchpad ===
+        container.addEventListener('wheel', function (e) {
+          if (e.deltaY !== 0) {
+            e.preventDefault();
+            container.scrollLeft += e.deltaY;
+          }
+        }, { passive: false });
+      }
+  
+      function updateDots(activeIndex) {
+        dots.forEach((dot, i) => {
+          dot.classList.toggle("active", i === activeIndex);
+        });
+      }
+  
+      // === Update Copyright Year ===
+      document.getElementById("copyright-year").textContent = new Date().getFullYear();
     });
-    
-    document.getElementById("copyright-year").textContent = new Date().getFullYear();
   </script>
+  
+  <!-- Bootstrap JS (keep this below your custom scripts) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  
+  
+ </body>
 </html>
